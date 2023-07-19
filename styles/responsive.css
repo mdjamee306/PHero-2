@@ -79,10 +79,39 @@
     }
 
     .bg {
+        display: none;
         position: absolute;
         width: 110%;
         top: 150%;
         right: 2%;
+    }
+    .position-image img{
+        width: 100%;
+    }
+    .position-image {
+        position: absolute;
+        top: 20%;
+        left: 65%;
+    }
+    .mid-context{
+        margin: 25px 0px;
+    }
+    .mid-container {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .mid-image img {
+        width: 70%;
+        height: 100%;
+    }
+    .mid-image, .mid-content {
+        width: 100%;
+        text-align: center;
     }
 
     footer {
