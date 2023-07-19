@@ -191,7 +191,31 @@ header {
 .first-card {
     border-radius: 10px;
     box-shadow: 3px 3px 4px black;
+    position: relative;
+    display: inline-block;
 }
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 70px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    
+  }
+  
+  .play-button span {
+    pointer-events: none;
+  }
+  .first-card:hover .play-button {
+    opacity: 1;
+  }
 
 .first-card img {
     width: 100%;
@@ -212,17 +236,20 @@ header {
     align-content: center;
 }
 
-.mid-container img{
+.mid-container img {
     width: 65%;
 }
-.mid-container{
+
+.mid-container {
     position: relative;
 }
+
 .position-image {
     position: absolute;
     top: 50%;
     left: 55%;
 }
+
 .mid-container,
 .mid-content {
     max-width: 1440px;
@@ -273,6 +300,7 @@ header {
 
 .game-parent {
     flex-basis: 300px;
+    border: 1px solid transparent;
 }
 
 .first-game {
