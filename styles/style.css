@@ -151,37 +151,84 @@ header {
 .bg img {
     position: absolute;
     top: 18%;
+    display: none;
 }
 
 /* header ends here */
 
 /* main starts here */
-.mid-context {
-    position: relative;
+.main-title {
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    margin-top: 30px;
 }
 
+.title-fancy {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-description {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.card-container {
+    display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.first-card {
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.first-card img {
+    width: 100%;
+}
+
+.first-card p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.mid-context {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    height: 500px;
+    align-content: center;
+}
+
+.mid-container img{
+    width: 65%;
+}
+.mid-container{
+    position: relative;
+}
 .position-image {
     position: absolute;
-    top: 55%;
-    left: 35%;
+    top: 50%;
+    left: 55%;
 }
-
-.mid-container {
-    display: flex;
-    max-width: 80%;
-    margin: 0 auto;
-    align-items: center;
-    gap: 250px;
-    position: relative;
-    height: 100%;
-    margin: 150px;
-}
-
-
-
-.mid-image,
+.mid-container,
 .mid-content {
-    width: 50%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 450px;
+    margin-top: 100px;
 }
 
 .mid-text {
@@ -233,9 +280,10 @@ header {
     justify-content: space-evenly;
     align-items: center;
 }
-.game-parent:hover{
+
+.game-parent:hover {
     border: 2px solid #F948B2;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 /* .first-games{
@@ -275,7 +323,7 @@ footer {
     margin: 0 auto;
 }
 
-.footer-content p{
+.footer-content p {
     color: #FFF;
     font-family: Work Sans;
     font-size: 18px;
